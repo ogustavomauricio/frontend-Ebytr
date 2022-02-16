@@ -20,7 +20,16 @@ describe('Verifica se existe todos itens necessários na tela de Tarefas', () =>
 	it('Existe um input na pagina', () => {
     render(<ScreenTask />);
 
-		const task = screen.getByLabelText('Tarefa:');
+		const task = screen.getByLabelText('Tarefa');
+
+		expect(task).toBeInTheDocument();
+		expect(task).toHaveProperty('type', 'text');
+  });
+
+  it('Existe uma table na pagina', () => {
+    render(<ScreenTask />);
+
+		const task = screen.getBy('Tarefa:');
 
 		expect(task).toBeInTheDocument();
 		expect(task).toHaveProperty('type', 'text');
