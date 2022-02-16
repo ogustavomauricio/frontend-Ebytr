@@ -69,7 +69,7 @@ export default function TableTask() {
                   <ButtonGroup aria-label="outlined primary button group">
                     <Button
                       color="primary"
-                      href={"/updatecustumers/" + task._id}
+                      href={"/editTask/" + task._id}
                     >
                       Editar
                     </Button>
