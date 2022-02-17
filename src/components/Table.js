@@ -49,7 +49,7 @@ export default function TableTask() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>Tarefa</TableCell>
+              <TableCell className='table-title'>Tarefa</TableCell>
               <TableCell align="center">Criada em</TableCell>
               <TableCell align="center">Status</TableCell>
               {/* <TableCell align="center">Estado</TableCell> */}
